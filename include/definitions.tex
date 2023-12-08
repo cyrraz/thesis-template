@@ -1,0 +1,33 @@
+% Define shortcut commands
+
+% Mathematical environments
+\def \be {\begin{equation}}
+\def \ee {\end{equation}}
+\def \ba {\begin{equation} \begin{aligned}}
+\def \ea {\end{aligned} \end{equation}}
+\def \begm {\left(\begin{matrix}}
+\def \endm {\end{matrix}\right)}
+
+% Mathematical symbols
+\def \real {\mathbb{R}}
+
+% Fraction with text
+\newcommand*\textfrac[2]{
+  \ensuremath{\frac{\text{#1}}{\text{#2}}}
+}
+
+% Helpers for tables
+\newcommand{\Tstrut}{\rule{0pt}{2.6ex}}         % = `top' strut
+\newcommand{\Bstrut}{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
+\newcommand{\toprule}{\hline\Bstrut}
+\newcommand{\midrule}{\hline\Tstrut\Bstrut}
+\newcommand{\bottomrule}{\hline\Tstrut}
+
+% Deal with missing figures which are not directly included in the repository
+% Taken from https://tex.stackexchange.com/questions/39982/use-default-figure-if-file-is-missing
+\newcommand{\noimage}{%
+  \setlength{\fboxsep}{-\fboxrule}%
+  \fbox{\phantom{\rule{10pt}{10pt}}Figure missing\phantom{\rule{10pt}{10pt}}}% Framed box
+}
+\let\includegraphicsoriginal\includegraphics
+\renewcommand{\includegraphics}[2][width=\textwidth]{\IfFileExists{#2}{\includegraphicsoriginal[#1]{#2}}{\noimage}}

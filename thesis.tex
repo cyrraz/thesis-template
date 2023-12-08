@@ -1,0 +1,25 @@
+% Include all the tex files needed to compile the document
+\documentclass[a4paper,twoside,11.5pt]{scrbook}
+
+% Include
+\input{include/packages.tex}
+\input{include/styles.tex}
+\input{include/definitions.tex}
+
+\begin{document}
+
+% Chapters
+\input{chapters/title.tex}
+\input{chapters/abstract.tex}
+\tableofcontents
+\clearpage
+\input{chapters/introduction.tex}
+\input{chapters/probability.tex}
+\input{chapters/conclusion.tex}
+
+% Bibliography
+\newpage
+\bibliographystyle{plain}
+\bibliography{include/bibliography}
+
+\end{document} 
