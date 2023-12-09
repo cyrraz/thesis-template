@@ -1,3 +1,6 @@
+latex-thesis-template
+=====================
+
 LaTeX template for a PhD, Master's or Bachelor's thesis, or actually any kind of thesis.
 This is a minimalistic version of my own PhD thesis, whose source files are fully available in [this repository](https://github.com/cyrraz/phd-thesis).
 
@@ -15,3 +18,9 @@ The main files and folders are:
 * `include/definitions.tex`: file defining new commands/shortcuts;
 * `include/bibliography.bib`: file containing BibTeX entries, which can be maintained with [JabRef](https://www.jabref.org/);
 
+See also
+--------
+* [phd-thesis](https://github.com/cyrraz/phd-thesis):  PhD thesis in Particle Physics written in LaTeX.
+* [particle-physics-presentations](https://github.com/cyrraz/particle-physics-presentations): Collection of public presentations in Beamer LaTeX that I gave during my PhD and postdoctoral studies in Particle Physics.
+* [moriond-2023-proceedings-ewp-radiative](https://github.com/cyrraz/moriond-2023-proceedings-ewp-radiative): Proceedings written in LaTeX for my talk at the "57th Rencontres de Moriond 2023" conference.
+* [latex-letter-template](https://github.com/cyrraz/latex-letter-template):  Very simple template for a letter in LaTeX.
