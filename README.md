@@ -6,6 +6,7 @@ This is a minimalistic version of my own PhD thesis, whose source files are full
 
 The pdf of the thesis can be produced by running `make`.
 For the creation of the pdf file, you need a distribution of TeX, such as [TeX Live](https://www.tug.org/texlive/quickinstall.html).
+An alternative is to use an online LaTeX editor, such as [Overleaf](https://www.overleaf.com/).
 
 The main files and folders are:
 * `thesis.tex`: main tex file whose purpose is to import all the other tex files;
