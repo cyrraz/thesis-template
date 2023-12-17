@@ -1,5 +1,5 @@
-latex-thesis-template
-=====================
+thesis-template
+===============
 
 LaTeX template for a PhD, Master's or Bachelor's thesis, or actually any kind of thesis.
 This is a minimalistic version of my own PhD thesis, whose source files are fully available in [this repository](https://github.com/cyrraz/phd-thesis).
